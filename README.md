@@ -163,7 +163,11 @@ https://scroll-driven-animations.style/demos/horizontal-section/css/
 
 Ik merk dat ik moeite heb met het bedenken en visualiseren in mijn hoofd wat voor animaties ik kan toepassen. Mijn creativiteit stopt daar een beetje. Omdat ik in mijn hoofd veel chaos beleef vind ik het nog moeilijk om animaties in stappen uit te werken. Ik probeer daarom inspiratie op te doen bij andere mensen, maar merk dan snel dat ik dingen overneem en vervolgens niet meer aanpas, waardoor het hele experimenteren van dit vak moeilijk gaat.
 
-Toch heb ik het wel geprobeerd en ben ik op bepaalde elementen uit de website zelf uit gekomen.
+Ik liep deze week heel erg vast met het coderen van een droom in een droom etc. Ik begon met experimenteren, met een codepen van Sanne (zie bronvermelding), maar kwam na een hele dag eraan werken nergens. Ik was te chaotisch in de dingen die ik moest toevoegen verwijderen en merkte dat ik gewoon niet opschoot. Toen verloor ik een beetje mijn hoop en ben ik teruggegaan naar de Mozilla bron waar ik de scrollbased stacking cards van heb gebruikt. Mijn plan is om die code als basis een beetje te gebruiken / bouwen op mijn eigen manier, en op zon manier de animaties uitwerken dat elke foto steeds kleiner wordt en dieper in elkaar gaat. Op die manier zou ik dan een droom in een droom weergeven.
+
+![stackingcards](./images/Screenshot%202025-03-20%20at%2015.23.06.png)
+
+(week 4 ik: Helaas heb ik er geen screenshot van gemaakt dus kan het niet laten zien. Wel zet ik de bron erin die ik heb gebruikt. Uiteindelijk is het niet in het eindproduct gekomen dus of het veel uit maakt weet ik.)
 
 - **Oplossing:**
 
