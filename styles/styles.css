@@ -503,12 +503,10 @@ div:nth-of-type(1) section:nth-of-type(1) {
         height: 20vh;
         margin-top: -40px;
         padding: 0vh 30vw;
-
-
     }
     100% {
         background-position: 100% 50%;
-        transform: scale(1); /* SVG verkleint naar 50% */
+        transform: scale(1); 
         height: 100vh;
         /* margin-top: 50px; */
         /* padding: 0vh 30vw; */
@@ -563,6 +561,8 @@ section:nth-of-type(3) {
 /* -------------------------------- DREAM LAYERS -------------------------------- */
 
 /* REALITY - PLANE SCENE */
+
+/* https://scroll-driven-animations.style/demos/horizontal-section/css/ */
 
  @keyframes move {
 	to {
@@ -706,6 +706,8 @@ div:nth-of-type(2) section:nth-of-type(2) {
 }
 
 /* --------------- DREAMS WRAPPER --------------- */
+
+/* https://codepen.io/shooft/pen/raNpLGG */
 
 div:nth-of-type(2) section:nth-of-type(3) {
     height:1450vh;
