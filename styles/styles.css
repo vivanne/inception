@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-color: #F8F4F4;
+    --text-color: rgb(28, 28, 28);
+    --text-color-dark-background: rgb(166, 166, 166);
+    --white: white;
+    --inception-rood: rgb(130, 10, 10);
+
+    --shock-rood: #8B0000;
+    --shock-blauw: #00008B;
+}
+
 main {
     box-sizing: border-box;
     margin: 0;
@@ -12,17 +23,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F8F4F4;
-    color: rgb(28, 28, 28);
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-align: center;
 }
 
-/* #inception-hidden {
-    display: hidden;
-} */
-
 label {
-    color: rgb(166, 166, 166);
+    color: var(--text-color-dark-background);
     font-family: "scale-variable", sans-serif;
     font-variation-settings: "wdth" 50, "wght" 200;
     font-size: 1.4em;
@@ -65,17 +72,17 @@ html:has([value="inception"]:checked) {
         25% { 
             transform: scale(1.1) rotate(2deg); 
             opacity: 0.4; 
-            text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000; /* Donkerrood */
+            text-shadow: 0 0 5px var(--shock-rood), 0 0 10px var(--shock-rood);
         }
         50% { 
             transform: scale(0.9) rotate(-2deg); 
             opacity: 0.5; 
-            text-shadow: 0 0 8px #00008B, 0 0 15px #00008B; /* Donkerblauw */
+            text-shadow: 0 0 8px var(--shock-blauw), 0 0 15px var(--shock-blauw); 
         }
         75% { 
             transform: scale(1.05) rotate(1deg); 
             opacity: 0.4; 
-            text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000; /* Donkerrood */
+            text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000; 
         }
         100% { 
             transform: scale(1) rotate(0deg); 
@@ -84,9 +91,7 @@ html:has([value="inception"]:checked) {
         }
     }
 
-
       section:nth-of-type(2) h2:nth-of-type(1) {
-        /* font-variation-settings: "wght" 100, "wdth" 500; */
         position: fixed;
         top: 10%;
         left: 20%;
@@ -238,7 +243,7 @@ header {
     z-index: 20;
     border-radius: 50px;
 
-    background-color: white;
+    background-color: var(--white);
 }
 
 header h2 {
@@ -249,7 +254,7 @@ header h2 {
 }
 
 div:nth-of-type(1) section:nth-of-type(1) {
-    color: #fff;
+    color: var(--white);
     height: 100vh;
     width: 100%;
     display: grid;
@@ -295,19 +300,6 @@ div:nth-of-type(1) section:nth-of-type(1) {
     75% { transform: translate(-50%, -50%) rotate(3deg) skewX(3deg); }
     100% { transform: translate(-50%, -50%) rotate(0deg) skewX(0deg); }
   }
-
-/* 
-Scroll-triggered animatie om SVG groter te maken wanneer de gebruiker naar beneden scrolt
-@supports (animation-timeline: scroll) {
-    div:nth-of-type(1) section:nth-of-type(1) svg {
-        animation: wobble 1.5s ease-in-out infinite, growAndWobble 3s ease-in-out forwards;
-        animation-timeline: scroll;
-        animation-range: 0vh 100vh, 1650vh 1750vh; 
-    }
-} */
-
-
-
 
 :root {
     --dice-size: 300px; /* Verander deze waarde om de dobbelsteen te schalen */
@@ -361,57 +353,57 @@ Scroll-triggered animatie om SVG groter te maken wanneer de gebruiker naar bened
                 /* Specifieke instellingen voor iedere li */
                 & li:nth-child(1) {
                     background-color: rgb(0, 0, 0);
-                    background-image: radial-gradient(circle, white 0 1.5em, rgba(255, 255, 255, 0) 0);
+                    background-image: radial-gradient(circle, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0);
                     transform: rotateY(0deg) translateZ(calc(var(--dice-size) / 2));
                 }
 
                 & li:nth-child(2) {
                     background-color: rgb(25, 25, 25);
                     background-image: 
-                        radial-gradient(circle at left bottom, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at right top, white 0 1.5em, rgba(255, 255, 255, 0) 0);
+                        radial-gradient(circle at left bottom, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at right top, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0);
                     transform: rotateY(180deg) translateZ(calc(var(--dice-size) / 2));
                 }
 
                 & li:nth-child(3) {
                     background-color: rgb(48, 48, 48);
                     background-image: 
-                        radial-gradient(circle at 25% 25%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 50% 50%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 80% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0);
+                        radial-gradient(circle at 25% 25%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 50% 50%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 80% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0);
                     transform: rotateY(-90deg) translateZ(calc(var(--dice-size) / 2));
                 }
 
                 & li:nth-child(4) {
                     background-color: rgb(60, 60, 60);
                     background-image: 
-                        radial-gradient(circle at 20% 20%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 80% 20%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 20% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 80% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0);
+                        radial-gradient(circle at 20% 20%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 80% 20%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 20% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 80% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0);
                     transform: rotateY(90deg) translateZ(calc(var(--dice-size) / 2));
                 }
 
                 & li:nth-child(5) {
                     background-color: rgb(111, 111, 111);
                     background-image: 
-                        radial-gradient(circle at 20% 20%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 80% 20%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 50% 50%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 20% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 80% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0);
+                        radial-gradient(circle at 20% 20%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 80% 20%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 50% 50%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 20% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 80% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0);
                     transform: rotateX(90deg) translateZ(calc(var(--dice-size) / 2));
                 }
 
                 & li:nth-child(6) {
                     background-color: rgb(190, 190, 190);
                     background-image: 
-                        radial-gradient(circle at 20% 20%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 50% 20%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 80% 20%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 20% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 50% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0),
-                        radial-gradient(circle at 80% 80%, white 0 1.5em, rgba(255, 255, 255, 0) 0);
+                        radial-gradient(circle at 20% 20%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 50% 20%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 80% 20%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 20% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 50% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0),
+                        radial-gradient(circle at 80% 80%, var(--white) 0 1.5em, rgba(255, 255, 255, 0) 0);
                     transform: rotateX(-90deg) translateZ(calc(var(--dice-size) / 2));
                 }
             }
@@ -434,7 +426,7 @@ Scroll-triggered animatie om SVG groter te maken wanneer de gebruiker naar bened
             font-variation-settings: "wght" 300, "wdth" 100;
 
             font-size: 20em;
-            color: rgb(130, 10, 10);
+            color: var(--inception-rood);
             /* margin-left: -100px; */
             transition: font-size 1s ease, transform 1s ease;
             animation: h1 linear forwards;
@@ -621,7 +613,7 @@ div:nth-of-type(2) section:nth-of-type(1) {
                 text-align: left;
                 max-width: 700px;
                 padding: 100px;
-                color: white;
+                color: var(--white);
 
                 & h3 {
                     font-family: "scale-variable", sans-serif;
@@ -662,7 +654,7 @@ div:nth-of-type(2) section:nth-of-type(2) {
         width: 200px;
         height: 200px;
         background-image: 
-        radial-gradient(circle at center, rgb(130, 10, 10) 0 1em, rgba(255, 255, 255, 0) 0),
+        radial-gradient(circle at center, var(--inception-rood) 0 1em, rgba(255, 255, 255, 0) 0),
         radial-gradient(circle at center, rgba(160, 59, 59, 0.991) 0 2em, rgba(255, 255, 255, 0) 0),
         radial-gradient(circle at center, rgba(205, 112, 112, 0.633) 0 3em, rgba(255, 255, 255, 0) 0);
         border-radius: 50%;
